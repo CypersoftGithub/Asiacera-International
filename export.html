@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+
+	
+<!-- Mirrored from themeperch.net/html/Asiacera-International/export.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Aug 2024 05:24:47 GMT -->
+<head>
+		<meta charset="utf-8">
+        <meta name="theme-color"  content="#253b2f">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Asiacera-International description contents">
+		<title>Asiacera-International</title>
+		<link rel="shortcut icon" type="images/png" href="assets/images/fav-icon/favicon.png">
+
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="assets/css/odometer.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- Customise-Theme -->
+		<!-- <link rel="stylesheet" href="assets/css/theme.css"> -->
+
+
+
+		<script>
+			function setpicimage(l, w) {
+				document.getElementById("xlength").innerText = l + ' Ft';
+				document.getElementById("ylength").innerText = w + ' Ft';
+			}
+
+			function calculate() {
+				var SLength = document.getElementById("SLength").value;
+				var SWidth = document.getElementById("SWidth").value;
+
+				setpicimage(SLength, SWidth);
+				document.getElementById("ar_feet").value = parseFloat(SLength) * parseFloat(SWidth);
+				document.getElementById("ar_mtr").value = parseFloat((parseFloat(SLength) * parseFloat(SWidth)) / (3.28 * 3.28), 3);
+
+				var tileSize = document.getElementById("sizes").value;
+
+				var tilesinbox;
+				//tilesinbox=0;
+
+				tilesinbox = document.getElementById("sizes").options[document.getElementById("sizes").selectedIndex].dataset.picperbox;
+				//alert(tilesinbox);exit;
+				if (tileSize.indexOf("mm") > 0) tileSize = tileSize.substr(0, tileSize.indexOf("mm"));
+				tileCoords = tileSize.split("x");
+				sLength = SLength * 304.8;
+				sWidth = SWidth * 304.8;
+				var doorSize, winSize;
+
+				var TileArea = (parseFloat(sLength) * parseFloat(sWidth));
+
+				xVal = tileCoords[0];
+				yVal = tileCoords[1];
+
+				var tileSize = (parseFloat(xVal) * parseFloat(yVal));
+				var TotalTilesRequired = TileArea / tileSize;
+				if ((TotalTilesRequired - Math.round(TotalTilesRequired)) > 0)
+					TotalTilesRequired = Math.round(TotalTilesRequired) + 1;
+				else
+					TotalTilesRequired = Math.round(TotalTilesRequired, 0);
+				document.getElementById("TotalTiles").value = TotalTilesRequired;
+
+
+				var boxcount = parseFloat(TotalTilesRequired / tilesinbox);
+
+				if ((boxcount - Math.round(boxcount)) > 0)
+					boxcount = Math.round(boxcount) + 1;
+				else
+					boxcount = Math.round(boxcount, 0);
+				document.getElementById("TotalBoxes").value = boxcount;
+			}
+		</script>
+		
+	</head>
+
+
+
+	<body>
+		<div class="page">
+
+
+		<div class="preloader">
+			<div class="loading-container">
+				<div class="loading"></div>
+				<div id="loading-icon"><img src="assets/images/fav-icon/favicon.png" alt=""></div>
+			</div>
+		</div>
+
+
+			
+
+			<div class="w-100 h-100 position-fixed top-0 start-0 page-lines">
+				<div class="container position-relative h-100">
+					<span class="page-line-start position-absolute h-100"></span>
+					<span class="page-line-end position-absolute h-100"></span>	
+					<span class="page-line-inner position-absolute h-100 d-none d-xl-block"></span>					
+				</div>
+			</div>		
+
+			<!--Header Section ======================-->
+			<header class="section-header header-1 Asiacera-International-nav sticky-navbar header-bg-1">
+				<div class="d-none d-xl-block">
+					<div class="container-fluid max-width">
+						<!-- top-bar -->
+					</div>
+					<!-- container-fluid -->
+				</div>
+			
+				<nav class="navbar navbar-expand-xl navbar-light nav-border hover-menu" aria-label="Offcanvas navbar large">
+					<div class="container-fluid max-width">
+			
+						<div class="d-flex align-items-end">
+							<a class="navbar-brand py-0" href="index.html">
+								<span class="logo">
+									<img src="assets/images/fav-icon/AS2.png" alt="logo" width="auto" height="50">
+								</span>
+							</a>
+						</div>
+						<a href="javascript:void(0)" class="toggler-icon text-decoration-none d-block d-xl-none"
+							data-bs-toggle="offcanvas" data-bs-target="#Asiacera-InternationalNavbar"
+							aria-controls="Asiacera-InternationalNavbar" aria-label="Toggle navigation">
+							<svg width="40" height="23" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line x1="1.5" y1="1.5" x2="38.5" y2="1.5" stroke="#253B2F" stroke-width="3"
+									stroke-linecap="round" />
+								<line x1="1.5" y1="11.5" x2="38.5" y2="11.5" stroke="#253B2F" stroke-width="3"
+									stroke-linecap="round" />
+								<line x1="21.5" y1="21.5" x2="38.5" y2="21.5" stroke="#253B2F" stroke-width="3"
+									stroke-linecap="round" />
+							</svg>
+						</a>
+			
+						<div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
+							id="Asiacera-InternationalNavbar" aria-labelledby="Asiacera-InternationalNavbarLabel">
+							<div class="offcanvas-header">
+								<span class="offcanvas-title" id="Asiacera-InternationalNavbarLabel">
+									<span class="logo">
+										<img src="assets/images/fav-icon/AS2.png" alt="logo" width="auto" height="50">
+									</span>
+								</span>
+								<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-end flex-grow-1 align-items-xl-center">
+			
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">
+											Home
+										</a>
+									</li>
+			
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">
+											About Us
+										</a>
+									</li>
+			
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle main-dropdown" href="#" id="productDetailsDropdown">
+											Our Products
+										</a>
+										<ul class="dropdown-menu">
+											<!-- Porcelain Tiles with Submenu -->
+											<li class="dropdown-submenu">
+												<a class="dropdown-item submenu-toggle dropdown-mobileview" href="#">Porcelain
+													Tiles</a>
+												<ul class="dropdown-menu submenu ">
+													<li><a class="dropdown-item submenu-mobile" href="600x600.html">600x600</a></li>
+													<li><a class="dropdown-item submenu-mobile" href="800x800.html">800x800</a></li>
+													<li><a class="dropdown-item submenu-mobile" href="600x1200.html">600x1200</a>
+													</li>
+												</ul>
+											</li>
+			
+											<li><a class="dropdown-item" href="slab-tiles.html">Slab Tiles</a></li>
+											<li><a class="dropdown-item" href="ceramic-raw-material.html">Ceramic Raw Material</a>
+											</li>
+										</ul>
+									</li>
+			
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="productDetailsDropdown" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Product Details
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="productDetailsDropdown">
+											<li><a class="dropdown-item" href="PackingDetails.html">Packing Details</a></li>
+											<li><a class="dropdown-item" href="technical-specification.html">Technical
+													Specification</a></li>
+										</ul>
+									</li>
+			
+									<li class="nav-item">
+										<a class="nav-link" href="export.html">
+											Export
+										</a>
+									</li>
+			
+									<li class="nav-item">
+										<a class="nav-link" href="catalogue.html">
+											Catalogue
+										</a>
+									</li>
+			
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">
+											Contact
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- container-fluid -->
+				</nav>
+			
+			</header>
+			<!--Header Section ======================-->
+			
+
+
+			<!--offcanvasCart ======================-->
+			<!-- <div class="offcanvas offcanvas-end" id="offcanvasCart" tabindex="-1">
+				<div class="offcanvas-header">
+
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body px-3 py-40 py-xxl-100 px-lg-5">				
+					<div class="cart-items">
+						<span class="cart-items-heading">Your Cart (2)</span>
+						<a href="#" class="cart-items-heading text-decoration-none">Remove All (X)</a>
+					</div>		
+					<div class="cart-items pt-40 pt-xxl-60">
+						<div class="cart-items-inner d-flex align-items-center gap-3">
+							<img src="assets/images/shop-image-sm-1.png" alt="img">
+							<div class="d-flex flex-column gap-3">
+								<h6 class="cart-items-heading">Pendant Lamp</h6>
+								<span class="d-flex gap-3 align-items-center">
+									<span>Qty</span>
+									<span class="cart-items-heading">1</span>
+								</span>
+							</div>
+						</div>
+						<div class="d-flex flex-column gap-3 align-items-end">
+							<a class="text-decoration-none" href="#">(X)</a>
+							<h6 class="cart-items-heading">$499.99</h6>
+						</div>
+					</div>		
+					<div class="cart-items pt-4">
+						<div class="cart-items-inner d-flex align-items-center gap-3">
+							<img src="assets/images/shop-image-sm-2.png" alt="img">
+							<div class="d-flex flex-column gap-3">
+								<h6 class="cart-items-heading">Scandal Wall Sconce</h6>
+								<span class="d-flex gap-3 align-items-center">
+									<span>Qty</span>
+									<span class="cart-items-heading">1</span>
+								</span>
+							</div>
+						</div>
+						<div class="d-flex flex-column gap-3 align-items-end">
+							<a class="text-decoration-none" href="#">(X)</a>
+							<h6 class="cart-items-heading">$134.99</h6>
+						</div>
+					</div>	
+
+					<div class="offcanvas-cart-btn cart-items justify-content-between">
+						<div>
+							<h6 class="cart-items-heading mb-4 mb-xxl-30">Subtotal:</h6>
+							<a href="#" class="btn btn-md btn-primary ">View Cart</a>
+						</div>
+
+						<div>
+							<h6 class="cart-items-heading mb-4 mb-xxl-30 text-end">$634.99</h6>
+							<a href="#" class="btn btn-md btn-secondary ">Checkout</a>
+						</div>							
+					</div>						
+					
+				</div>
+			</div> -->
+			<!--offcanvasCart ======================-->
+
+
+
+			<!--Full-Screen-Modal (Search-Modal) ======================-->
+			<!-- <div class="modal fade" id="FullScreenModal" aria-hidden="true"  tabindex="-1">
+				<div class="modal-dialog modal-fullscreen">
+				  <div class="modal-content">
+					<div class="modal-header">					  
+					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 2L53 53" stroke="#D2E0D9" stroke-width="3"/>
+							<line x1="1.93543" y1="53.4393" x2="52.9354" y2="2.43934" stroke="#D2E0D9" stroke-width="3"/>
+						</svg> 
+					  </button>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<h2 class="display-2 fw-extra-bold mb-30">Search</h2>							
+							<form action="#" class="modal-search-form">
+								<div class="position-relative">
+									<input type="text" class="form-control" id="formInput" placeholder="Type & Hit Enter">
+									<button class="search-icon" type="submit">
+										<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_865_1148)">
+											<path d="M43.4629 40.8718L32.5198 29.9286C35.5019 26.2814 36.9681 21.6275 36.6151 16.9295C36.2622 12.2315 34.117 7.84895 30.6233 4.68826C27.1297 1.52758 22.5548 -0.169388 17.8451 -0.05163C13.1354 0.0661284 8.65104 1.9896 5.31971 5.32093C1.98838 8.65227 0.0649077 13.1366 -0.0528507 17.8463C-0.170609 22.5561 1.52636 27.1309 4.68704 30.6246C7.84773 34.1182 12.2303 36.2634 16.9283 36.6164C21.6263 36.9693 26.2802 35.5031 29.9274 32.521L40.8706 43.4642C41.2164 43.7981 41.6795 43.9829 42.1602 43.9787C42.6409 43.9745 43.1007 43.7817 43.4406 43.4418C43.7805 43.1019 43.9733 42.6421 43.9775 42.1614C43.9817 41.6807 43.7969 41.2176 43.4629 40.8718ZM18.3334 33.0013C15.4326 33.0013 12.597 32.1411 10.1851 30.5295C7.77314 28.9179 5.89327 26.6273 4.78319 23.9473C3.6731 21.2674 3.38265 18.3184 3.94857 15.4733C4.51449 12.6283 5.91135 10.0149 7.96252 7.96374C10.0137 5.91257 12.627 4.51571 15.4721 3.94979C18.3172 3.38388 21.2661 3.67432 23.9461 4.78441C26.6261 5.8945 28.9167 7.77436 30.5283 10.1863C32.1399 12.5982 33.0001 15.4339 33.0001 18.3346C32.9957 22.2231 31.4491 25.9511 28.6995 28.7007C25.9499 31.4503 22.2219 32.9969 18.3334 33.0013Z" fill="#D2E0D9"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_865_1148">
+											<rect width="44" height="44" fill="white"/>
+											</clipPath>
+											</defs>
+											</svg> 
+									</button>
+								</div>										  
+							</form>							
+						</div>
+					</div>					
+				  </div>
+				</div>
+			</div> -->
+			<!--Full-Screen-Modal (Search-Modal) ======================-->
+
+
+
+			<!--Hero Section ======================-->
+			<div class="section-hero hero-2 section-padding-xxl position-relative max-width">				
+				<img src="assets/images/home/export-main.jpg" class="img-fluid" alt="hero-image">
+			</div>
+			<!--Hero Section ======================-->
+
+
+			<!--Section ======================-->
+			<section class="section-full-width position-relative">
+
+				<div class="container">	
+					<div class="section-padding-xxl">
+						<div class="position-relative">
+							<div class="row g-40">
+								<div class="col-lg-7 col-xxl-8">
+									<div class="section-title section-separator">
+										<h2 class="fw-extra-bold heading-title separator lh-1">Export</h2>
+										<p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Our tiles have made their mark across the globe, reflecting quality craftsmanship and innovative design. With a strong export network, we ensure our ceramic tiles reach customers worldwide, delivering style and durability to every corner.</p>	
+									</div>
+								</div>
+								<div class="col-lg-5 col-xxl-4">									
+									<div class="project-details-wrapper project-details-style bg-primary text-secondary">
+										<h4 class="project-details-title fw-semibold">Tiles Exported Worldwide</h4>
+										<ul class="project-details-list list-unstyled mb-0 d-flex flex-row flex-lg-column flex-wrap flex-lg-nowrap">
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Global Reach</span>
+												<span>Delivering premium tiles to over 50 countries worldwide.</span>
+											</li>
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Unmatched Quality</span>
+												<span>Tiles crafted to perfection with international standards.</span>
+											</li>									
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Vast Design Range</span>
+												<span>Explore diverse designs, textures, and finishes for every need.</span>
+											</li>
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Eco-Friendly Solutions</span>
+												<span>Tiles produced with sustainable materials and processes.</span>
+											</li>
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Timely Delivery</span>
+												<span>Efficient logistics ensuring your tiles arrive on time, every time.</span>
+											</li>
+											<li class="d-flex flex-column gap-2 gap-xxl-10">
+												<span class="fs-5 fw-bold">Customer Satisfaction</span>
+												<span>Building trust with exceptional service and superior products.</span>
+											</li>		
+											<li class="Asiacera-International-button">
+												<a href="contact.html" class="btn btn-outline-secondary gap-10">contact us
+													<span class="arrow-down">
+														<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"></path>
+														</svg>
+													</span> 
+												</a>
+											</li>
+										</ul>
+									</div>																		
+								</div>
+							</div>
+						</div>						
+					</div>											
+				</div>		
+				<!-- container -->
+
+				<div class="image-contents d-flex flex-column flex-xl-row align-items-xl-center gap-4 section-padding-md position-relative px-10 px-lg-0">
+					<img src="assets/images/home/export-1.jpg" class="img-fluid wow fadeIn" alt="img" data-wow-delay=".3s">
+					<img src="assets/images/home/export-2.jpg" class="img-fluid wow fadeIn" alt="img" data-wow-delay=".4s">
+				</div>
+				
+				<div class="section-padding-md">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="section-title section-separator">						
+									<p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">Export refers to the process of selling goods or services produced in one country to buyers in another country. It plays a crucial role in a nation's economy, as it allows businesses to access a broader market, increase sales, and generate foreign currency.</p>	
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+
+
+				<!-- <div class="project-gallery-1 section-padding-lg">
+					<div class="swiper-custom-progress position-relative">
+						<div class="swiper project-gallery-swiper">
+							<div class="swiper-wrapper"> 
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-3.jpg" alt="img">						
+
+									</div>
+								</div>
+								swiper-slide	
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-4.jpg" alt="img">		
+
+									</div>
+								</div>
+								swiper-slide			
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-5.jpg" alt="img">		
+
+									</div>
+								</div>
+								swiper-slide
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-3.jpg" alt="img">							
+
+									</div>
+								</div>
+								swiper-slide	
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-4.jpg" alt="img">		
+
+									</div>
+								</div>
+								swiper-slide			
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-5.jpg" alt="img">	
+
+									</div>
+								</div>
+								swiper-slide
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-3.jpg" alt="img">							
+
+									</div>
+								</div>
+								swiper-slide	
+								<div class="swiper-slide">
+									<div>
+										<img src="assets/images/project-image-4.jpg" alt="img">		
+
+									</div>
+								</div>
+								swiper-slide
+											
+																
+							</div>
+							swiper-wrapper
+						</div>
+						swiper
+						<div class="container">
+							<div class="project-swiper-pagination-wrapper mt-xl-3">
+								<div class="project-swiper-pagination"></div>						
+								<div class="swiper-button-progress">	
+									<div class="progress-button-prev">
+										<svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+										</svg>
+									</div>							
+									<div class="progress-button-next">
+										<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+										</svg> 
+									</div>																
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <div class="section-padding-xxl">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="section-title section-separator">						
+									<p class="mb-0 subtitle py-2 py-lg-4">named as “ecosystemic”, the houses are designed with efficient systems and 100% recyclable components. therefore, they do not need adaptations to include sustainable solutions. thus, the house is already delivered with mechanisms of rainwater capture and reuse, solar energy through photovoltaic panels and a biodigestor that transforms organic waste into gas for the kitchen and fireplace. it is still possible to choose a green roof, which contributes naturally for thermal and acoustic comfort. the house is high-energy efficient.</p>	
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div> -->
+
+				<!-- <div class="container section-padding-lg">				
+					<div class="swiper gallerySwiper2">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-1.jpg" class="img-fluid" alt="gallery-img">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-2.jpg" class="img-fluid" alt="gallery-img">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-3.jpg" class="img-fluid" alt="gallery-img">
+						  </div>					 
+						</div>
+						<div class="project-gallery-button-next">
+							<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+							</svg>
+						</div>
+						<div class="project-gallery-button-prev">
+							<svg class="arrow-reverse" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"/>
+							</svg>
+						</div>
+					  </div>
+					  <div class="swiper gallerySwiper mt-4">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-4.jpg" class="img-fluid" alt="gallery-img">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-5.jpg" class="img-fluid" alt="gallery-img">
+						  </div>
+						  <div class="swiper-slide">
+							<img src="assets/images/project-gallery-6.jpg" class="img-fluid" alt="gallery-img">
+						  </div>
+											   
+						</div>
+					  </div>
+				</div> -->
+
+
+				
+				<!-- <div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="section-title section-separator">						
+								<p class="mb-0 subtitle py-2 py-lg-4">Other coatings assumed a neutral aesthetic. The floor of the social area is made of sintered stone sheets; the walls are made of joinery panels; the private rooms have engineered wood floors and walls in off white paint. The interior design features furniture designed by Arthur Casas, such as the sofá Fusca, the Apache dining table, the Max dining chairs and the Jet Set armchair, the Grampo lamp and the Belterra bedside table, besides the Ondas and Willys sideboards. Added to the pieces by Casas are the Paulistana armchair and the Anette armchair, by Jorge Zalszupin; Vintage side tables and Taccia table lamps by Castiglione for Flos.</p>	
+							</div>
+						</div>
+					</div>					
+				</div> -->
+				<div class="credits">
+					<div class="section-title-wrapper position-relative">
+						<div class="scroll-move">
+							<span
+								class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">calculate</span>
+						</div>
+				
+						<div class="container">
+							<div class="section-title section-separator">
+								<h2 class="fw-extra-bold heading-title separator lh-1">Tiles-calculate</h2>
+								<div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-end justify-content-lg-between">
+									<p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">
+										Our Tile Calculator helps you estimate the number of tiles required for your space with precision.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="container">
+							<div class="row">
+								<div class="col-md-7">
+									<div class="col-md-12">
+										<h4 data-aos="fade-down" data-aos-delay="100" class="calculator-heading">
+											CALCULATE YOUR AREA</h4>
+										<br />
+										<form>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="150">
+												<label class="calculator-text">Length</label>
+												<input type="text" id="SLength" name="SLength" class="calculator-box"
+													placeholder="Enter Length in Feet">
+											</div>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="200">
+												<label class="calculator-text">Width</label>
+												<input type="text" id="SWidth" name="SWidth" class="calculator-box" placeholder="Enter Width in Feet">
+											</div>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="250">
+												<label class="calculator-text">Tiles Size</label>
+												<select id="sizes" name="sizes" class="calculator-box calculator-box-arrow b-r-0 input-lg">
+													<option value="250 x 375" data-picperbox="8">250mm x 375mm (10" x 15")</option>
+													<option value="250 x 750" data-picperbox="5">250mm x 750mm (10" x 30")</option>
+													<option value="300 x 450" data-picperbox="6">300mm x 450mm (12" x 18")</option>
+													<option value="300 x 600" data-picperbox="5">300mm x 600mm (12" x 24")</option>
+													<option value="300 x 300" data-picperbox="8">300 x 300 MM</option>
+													<option value="395 x 395" data-picperbox="6">395 x 395 MM</option>
+													<option value="600 x 600" data-picperbox="4">600 x 600 MM</option>
+													<option value="800 x 800" data-picperbox="3">800 x 800 MM</option>
+													<option value="600 x 1200" data-picperbox="2">600 x 1200 MM</option>
+													<option value="800 x 1200" data-picperbox="2">800 x 1200 MM</option>
+													<option value="1000 x 1000" data-picperbox="2">1000 x 1000 MM</option>
+													<option value="800 x 1600" data-picperbox="2">800 x 1600 MM</option>
+													<option value="1200 x 1200" data-picperbox="2">1200 x 1200 MM</option>
+													<option value="1200 x 2400" data-picperbox="1">1200 x 2400 MM</option>
+												</select>
+											</div>
+											<button data-aos="fade-down" data-aos-delay="300" type="button" name="Button1" id="Button1"
+												onClick="calculate()" style="font-size: 15px;margin-top: 10px;"
+												class="btn btn-primary hvr-bounce-to-bottom ">CALCULATE TILES</button>
+										</form>
+									</div>
+									<div class="col-md-12" style="margin-top:30px;margin-bottom:30px;">
+										<h4 data-aos="fade-down" data-aos-delay="100" class="calculator-heading">
+											RESULT OF CALCULATION</h4>
+										<br />
+										<form>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="150">
+												<label class="calculator-text">Sq.M</label>
+												<input type="text" class="calculator-box" name="ar_mtr" id="ar_mtr" placeholder="Sq.M" disabled>
+											</div>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="200">
+												<label class="calculator-text">Sq.Ft</label>
+												<input type="text" class="calculator-box" name="ar_feet" id="ar_feet" placeholder="Sq.Ft" disabled>
+											</div>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="250">
+												<label class="calculator-text">Total Tiles</label>
+												<input type="text" class="calculator-box" name="TotalTiles" id="TotalTiles"
+													placeholder="Required Tiles" disabled>
+											</div>
+											<div class="form-group" data-aos="fade-down" data-aos-delay="300">
+												<label class="calculator-text">Total Boxes</label>
+												<input type="text" class="calculator-box" name="TotalBoxes" id="TotalBoxes" placeholder="Total Boxes"
+													disabled>
+											</div>
+											<span>This is Only Approx Calculation</span>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="tilestips" data-aos="fade-down" data-aos-delay="100">
+										<div style="height: 58.2%; width: 80.4%;">
+											<p class="tileFt horzFt"><span id="xlength">X ft</span></p>
+											<p class="tileFt vertFt"><span id="ylength">Y ft</span></p>
+										</div>
+									</div>
+									<h4 data-aos="fade-down" data-aos-delay="200" class="calculator-heading">
+										TIPS</h4>
+									<br />
+									<ul data-aos="fade-down" data-aos-delay="300">
+										<li>Length and Width Dimensions are in feet.</li>
+										<li>1 Feet = 0.3048 Meter</li>
+										<li>1 Meter = 3.28084 Feet</li>
+										<li>1 Meter = 100 Centimeters</li>
+										<li>1 Centimeters = 0.01 Meter</li>
+									</ul>
+								</div>
+							</div>
+
+					</div>
+				
+				</div>
+
+				<div class="credits">
+					<div class="section-title-wrapper position-relative">
+						<div class="scroll-move">
+							<span class="scrolling-text display-1 fw-extra-bold stroke-title text-stroke stroke-opacity-20 stroke-width-1 stroke-primary lh-1">Countries</span>
+						</div>					
+						
+						<div class="container">	
+							<div class="section-title section-separator">
+								<h2 class="fw-extra-bold heading-title separator lh-1"> Our Tiles in Your Country</h2>
+								<div class="d-flex flex-column flex-lg-row gap-4 align-items-lg-end justify-content-lg-between">
+									<p class="fs-4 fw-semibold mb-0 subtitle subtitle-width">
+										Our tiles have made their way to various countries, bringing quality and style to homes, offices, and commercial spaces around the world.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- section-title-wrapper -->
+					<div class="container">
+
+						<div class="containerfs">
+							<div class="slide-containerfs reverse">
+							  <div class="slide-images">
+								<img class="imgs"  src="./assets/images/flag/afghanistan.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs"  src="./assets/images/flag/albania.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/andorra.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/argentina.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img  class="imgs"src="./assets/images/flag/australia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/bhutan.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/brazil.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/burundi.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/denmark.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/cambodia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/canada.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs"  src="./assets/images/flag/chile.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs"  src="./assets/images/flag/colombia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/czechia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/egypt.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img  class="imgs"src="./assets/images/flag/eritrea.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/estonia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/france.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/gabon.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/georgia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/germany.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/greece.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/haiti.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/iceland.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/indonesia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/iran.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/ireland.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/israel.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/italy.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/japan.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/kuwait.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/lithuania.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/malaysia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/malta.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/mexico.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/monaco.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/myanmar.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/nepal.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/netherlands.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/newzealand.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/norway.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/oman.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/poland.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/portugal.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/qatar.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/romania.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/russia.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/singapore.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/southafrica.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/spain.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/srilanka.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/switzerland.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/taiwan.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/uganda.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/usa.png" alt="" />
+							  </div>
+							  <div class="slide-images">
+								<img class="imgs" src="./assets/images/flag/vietnam.png" alt="" />
+							  </div>
+							 
+							</div>
+						  </div>
+						<!-- <div class="section-padding-xxl"> -->
+							<!-- <div class="row align-items-lg-center gx-30 gx-md-40 gy-5 gy-lg-90">
+								<div class="col-md-6">
+									<div class="author-wrapper d-flex flex-column flex-lg-row align-items-lg-center">
+										<div class="author-image">
+											<div class="overflow-hidden">
+												<img src="assets/images/team-13.jpg" class="wow slideInLeft" alt="img">
+											</div>											
+										</div>
+										<div class="author-info">
+											<h5>Michael Johnson</h5>
+											<span class="fw-bold">Lead Designer</span>
+											<p class="mb-0 author-descriptions">As the lead designer, Michael brought creativity and innovation to the project. His visionary approach guided the entire design process.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="author-wrapper d-flex flex-column flex-lg-row align-items-lg-center">
+										<div class="author-image">
+											<div class="overflow-hidden">
+												<img src="assets/images/team-14.jpg" class="wow slideInLeft" alt="img">
+											</div>											
+										</div>
+										<div class="author-info">
+											<h5>Emily Scott</h5>
+											<span class="fw-bold">Interior Stylist</span>
+											<p class="mb-0 author-descriptions">Emily added the finishing touches, selecting furnishings, colors, and accessories to infuse the space with elegance.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="author-wrapper d-flex flex-column flex-lg-row align-items-lg-center">
+										<div class="author-image">
+											<div class="overflow-hidden">
+												<img src="assets/images/team-15.jpg" class="wow slideInLeft" alt="img">
+											</div>											
+										</div>
+										<div class="author-info">
+											<h5>Mark Anderson</h5>
+											<span class="fw-bold">Project Manager</span>
+											<p class="mb-0 author-descriptions">Anderson managed the project's execution, ensuring that it stayed on schedule and within budget, while maintaining quality and design integrity.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="author-wrapper d-flex flex-column flex-lg-row align-items-lg-center">
+										<div class="author-image">
+											<div class="overflow-hidden">
+												<img src="assets/images/team-16.jpg" class="wow slideInLeft" alt="img">
+											</div>											
+										</div>
+										<div class="author-info">
+											<h5>Sarah Roberts</h5>
+											<span class="fw-bold">Architect</span>
+											<p class="mb-0 author-descriptions">Sarah was responsible for architectural planning and ensuring the project's structural integrity, harmonizing the design with functionality.</p>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<!-- row -->
+						</div>
+						
+						<!-- <div class="section-padding-md">
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="section-title section-separator">						
+										<h2 class="fw-extra-bold heading-title lh-1">Other Credits</h2>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+						<!-- <div class="d-flex gap-4">
+							<div class="credits-wrapper">
+								<div class="cridit-image">
+									<img src="assets/images/credit-image-1.jpg" class="img-fluid" alt="img">
+								</div>
+								<a href="#"><h5 class="mt-4 mt-lg-30">Layero Engenharia</h5></a>
+								<p class="mb-0 pt-1">Engineers</p>
+							</div>
+							<div class="credits-wrapper">
+								<div class="cridit-image">
+									<img src="assets/images/credit-image-2.jpg" class="img-fluid" alt="img">
+								</div>
+								<a href="#"><h5 class="mt-4 mt-lg-30">Maddison & Walker</h5></a>
+								<p class="mb-0 pt-1">Interior Supplier</p>
+							</div>
+						</div> -->
+					</div>
+				</div>						
+			</section>
+			<!--Section ======================-->
+			
+
+			<!--Feedback Section ======================-->
+			<section class="section-feedback feedback-1 text-secondary">
+				<div class="container">
+					<div class="feedback-wrapper position-relative">
+						<div class="feedback-content d-flex flex-column gap-4 flex-lg-row align-items-lg-end justify-content-lg-around">
+							<h2 class="fw-extra-bold feedback-title">Drop Us a Line</h2>
+							<div class="Asiacera-International-button">
+								<a href="contact.html" class="btn btn-secondary gap-10"> 
+									Lets Talk
+									<svg class="arrow" width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"></path>
+									</svg>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Feedback Section ======================-->
+
+
+
+			<!--Request Modal ======================-->
+				<div id="technicalSheetModal" class="modal fade formDownload-modal" data-bs-backdrop="static" aria-hidden="true" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title fs-4" id="technicalSheetModalLabel">Download Sheet</h2>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="Asiacera-International-button mb-30">
+								<a href="#" class="btn btn-outline-primary btn-md mb-10" data-bs-toggle="modal" data-bs-target="#logInModal">Log in to Download</a>
+								<h6 class="my-3">Or, Fill The Form Below</h6>
+							</div>
+							<form id="downloadForm" class="contact-form row g-4">
+								<div class="col-md-6">
+									<label for="InputName" class="form-label fw-semibold">Name</label>
+									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name *" required>
+								</div>	
+								<div class="col-md-6">
+									<label for="InputSurname" class="form-label fw-semibold">Surname</label>
+									<input type="text" class="form-control" name="InputSurname" id="InputSurname" placeholder="Surname *" required>
+								</div>
+								<div class="col-md-6">
+									<label for="InputEmail" class="form-label fw-semibold">Email</label>
+									<input type="email" class="form-control" name="InputEmail" id="InputEmail" placeholder="Email *" required>
+								</div>		
+								<div class="col-md-6">
+									<label for="InputNumber" class="form-label fw-semibold" required>Phone Number</label>
+									<input type="text" class="form-control" name="InputNumber" id="InputNumber" placeholder="Phone Number">
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" name="agree" value="yes" id="formCheck-2" required>
+										<label class="form-check-label fw-medium" for="formCheck-2">
+											By using this form you agree with the storage and handling of your data policies of Asiacera-International.
+										</label>
+									</div>
+								</div>									
+								<div class="col-12">
+									<div class="Asiacera-International-button mt-3">
+										<button type="submit" class="btn btn-primary btn-md gap-10">Request Document 							
+											<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"></path>
+											</svg>							
+										</button>
+									</div>								
+								</div>		
+								<div class="response py-3"></div>										  
+							</form>													  
+						</div>
+						</div>
+					</div>				
+				</div>
+
+				<div id="logInModal" class="modal fade formDownload-modal formDownload-modal-style2" data-bs-backdrop="static" aria-hidden="true" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title fs-4" id="logInModalLabel">Log In</h2>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">						  
+							<form action="#" class="contact-form row g-4">
+								<div class="col-12">
+									<label for="email-3" class="form-label fw-semibold">Email Address</label>
+									<input type="email" class="form-control" name="email" id="email-3" placeholder="Email Address*" required>
+								</div>	
+								<div class="col-12">
+									<label for="password" class="form-label fw-semibold">Password</label>
+									<input type="password" class="form-control" name="password" id="password" placeholder="Password*" required>
+								</div>							  
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="remember_me">
+										<label class="form-check-label fw-medium" for="remember_me">
+											Remember Me
+										</label>
+									</div>
+								</div>									
+								<div class="col-12">
+									<div class="d-flex justify-content-between gap-4 flex-wrap align-items-center mt-lg-3">
+										<div class="Asiacera-International-button">
+											<button type="submit" class="btn btn-primary btn-md gap-10">Log in 							
+												<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"></path>
+												</svg>							
+											</button>
+										</div>
+										<div>
+										<a href="#" data-bs-target="#registerModal" data-bs-toggle="modal">Create an Account</a>
+										</div>
+									</div>								  								
+								</div>												  
+							</form>	
+																		
+						</div>
+						</div>
+					</div>				
+				</div>
+
+				<div id="registerModal" class="modal fade formDownload-modal formDownload-modal-style2" data-bs-backdrop="static" aria-hidden="true" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title fs-4" id="registerModalLabel">Create an Account</h2>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">						  
+							<form action="#" class="contact-form row g-4">
+								<div class="col-12">
+									<label for="Name-2" class="form-label fw-semibold">Name</label>
+									<input type="text" class="form-control" name="name" id="Name-2" placeholder="Name*" required>
+								</div>								
+								<div class="col-12">
+									<label for="email-2" class="form-label fw-semibold">Email</label>
+									<input type="email" class="form-control" name="email" id="email-2" placeholder="Email*" required>
+								</div>
+								<div class="col-12">
+									<label for="password-2" class="form-label fw-semibold">Password</label>
+									<input type="password" class="form-control" name="password" id="password-2" placeholder="Password*" required>
+								</div>	
+								<div class="col-12">
+									<label for="password-3" class="form-label fw-semibold">Confirm Password</label>
+									<input type="password" class="form-control" name="password" id="password-3" placeholder="Confirm Password*" required>
+								</div>						  
+																
+								<div class="col-12">
+									<div class="d-flex justify-content-between gap-4 flex-wrap align-items-center mt-lg-3">
+										<div class="Asiacera-International-button">
+											<button type="submit" class="btn btn-primary btn-md gap-10">Register 							
+												<svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.585815L34.4142 10.9999L24 21.4142L22.5858 20L30.5857 12L0 12L2.38419e-07 10L30.5858 10L22.5858 2.00003L24 0.585815Z"></path>
+												</svg>							
+											</button>
+										</div>
+										<div>
+										<a href="#" data-bs-target="#logInModal" data-bs-toggle="modal">Log In</a>
+										</div>
+									</div>								  								
+								</div>												  
+							</form>	
+																		
+						</div>
+						</div>
+					</div>				
+				</div>
+			<!--Request Modal ======================-->
+			
+
+
+			<!--Footer Section ======================-->
+<footer class="section-footer section-full-width bg-secondary position-relative">
+	<div class="container">
+		<div class="footer-contents">
+			<div class="row gy-5 gy-lg-0  justify-content-between">
+				<div class="col-lg-3">
+					<div>
+						<a class="navbar-brand py-0" href="index.html">
+							<span class="logo">
+								<img src="assets/images/fav-icon/AS2.png" alt="logo" width="auto" height="50">
+							</span>
+						</a>
+						<p class="py-10 py-lg-3 mb-0 fw-semibold">Our Social Media</p>
+						<ul class="contact-lists list-unstyled mb-0 d-flex">
+
+							<a target="_blank"
+								href="https://www.facebook.com/people/Asiacera-International/61561267567617/?mibextid=ZbWKwL"><svg
+									xmlns="http://www.w3.org/2000/svg" style="width: 20px;" viewBox="0 0 512 512">
+									<path
+										d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+								</svg></a>
+							<a target="_blank"
+								href="https://www.instagram.com/asiacera_international/?igsh=MWlpc2kwMjQyMzl0bA%3D%3D">
+								<svg xmlns="http://www.w3.org/2000/svg" style="width: 20px;" viewBox="0 0 448 512">
+									<path
+										d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+								</svg></a>
+							<a target="_blank" href="https://www.linkedin.com/company/asiacera/"> <svg
+									xmlns="http://www.w3.org/2000/svg" style="width: 20px;" viewBox="0 0 448 512">
+									<path
+										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+								</svg></a>
+							<a target="_blank" href="mailto:info@asiacerainternational.com"><svg
+									xmlns="http://www.w3.org/2000/svg" style="width: 20px;" viewBox="0 0 512 512">
+									<path
+										d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+								</svg></a>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 col-xxl-3">
+					<div class="address-details">
+						<h5 class="fw-extra-bold separator">Address</h5>
+						<div class="footer-address">
+							<p class="fw-semibold mb-0">Asiacera,</p>
+							<p>2nd Floor Shivalik Complex, Mahendra Nagar, Jetpar Road , Morbi, Gujarat, India, 363642
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- col-4 -->
+				<div class="col-lg-4 col-xxl-4">
+					<div class="address-details">
+						<h5 class="fw-extra-bold separator">Contact Details</h5>
+						<div class="d-flex flex-column">
+							<p class="mb-0 d-flex align-items-center gap-2">Phone: <a href="tel:8780073457"
+									class="text-decoration-none link-hover-animation-1">+91 8780073457</a></p>
+
+							<p class="mb-0 d-flex align-items-center gap-2">Phone: <a href="tel:7621019387"
+									class="text-decoration-none link-hover-animation-1">+91 7621019387</a></p>
+
+							<p class="mb-0 d-flex align-items-center gap-2">Phone: <a href="tel:9638555853"
+									class="text-decoration-none link-hover-animation-1">+91 9638555853</a></p>
+
+
+							<p class="mb-0 d-flex align-items-center gap-2">Email: <a
+									href="mailto:info@asiacerainternational.com"
+									class="text-decoration-none link-hover-animation-1">info@asiacerainternational.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- col-3 -->
+				<div class="col-lg-2 col-xxl-2">
+					<div class="address-details">
+						<h5 class="fw-extra-bold separator">More Details </h5>
+
+						<div class="d-flex flex-column">
+							<p><a href="about-us.html" class="text-decoration-none link-hover-animation-1">About
+									Us</a></p>
+							<p><a href="export.html" class="text-decoration-none link-hover-animation-1">Export</a></p>
+							<p><a href="catalogue.html"
+									class="text-decoration-none link-hover-animation-1">Catalogue</a></p>
+							<p><a href="contact.html" class="text-decoration-none link-hover-animation-1">Contact Us</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- col-3 -->
+			</div>
+		</div>
+		<div
+			class="copyright d-flex flex-column gap-2 flex-lg-row justify-content-lg-between align-items-lg-center text-center text-sm-start">
+
+			<p class="mb-0">&copy; 2025,<span><a href="https://www.cypersoft.com/" target="_blank"
+						class="text-decoration-none link-hover-animation-1"> Cypersoft</a></span>, All Rights Reserved
+			</p>
+		</div>
+	</div>
+	<!-- container -->
+</footer>
+			<!--Footer Section ======================-->
+
+
+			<!--Back-to-top ======================-->
+			<div class="progressCounter progressScroll progress-scroll-opacity-0">
+				<div class="progressScroll-border">
+				  <div class="progressScroll-circle">
+					<span class="progressScroll-text text-secondary">
+						<svg width="24" height="24" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.1758 41.7882C11.4955 41.1079 11.4388 40.0401 12.0057 39.2953L12.1758 39.1007L39.0508 12.2256C39.7929 11.4835 40.9962 11.4835 41.7383 12.2256C42.4186 12.9059 42.4753 13.9737 41.9084 14.7185L41.7383 14.9131L14.8633 41.7882C14.1211 42.5303 12.9179 42.5303 12.1758 41.7882Z"/>
+							<path d="M18.7659 15.5153C17.7163 15.5175 16.8637 14.6685 16.8614 13.619C16.8594 12.6649 17.5608 11.8735 18.4769 11.7358L18.7577 11.7146L40.3903 11.668C41.3473 11.6659 42.14 12.3714 42.2746 13.2906L42.2947 13.5723L42.25 35.2067C42.2478 36.2562 41.3952 37.1052 40.3457 37.1031C39.3916 37.1011 38.6031 36.3963 38.4693 35.4797L38.4493 35.1988L38.489 15.4727L18.7659 15.5153Z"/>	
+						</svg>
+					</span>
+					</div>
+				</div>
+			</div>
+			<!--Back-to-top ======================-->
+
+
+		</div>
+		<!-- pages -->
+		 !-- WhatsApp Popup -->
+		<div id="whatsapp-popup" class="whatsapp-popup d-none">
+			<div class="header">
+				<strong>WhatsApp Chat</strong>
+				<button class="btn-close btn-sm" onclick="togglePopup()"></button>
+			</div>
+			<div class="body">
+				<p>
+					Hello! Send us an email at <a href="mailto:info@asiacerainternational.com"
+						style="text-decoration: none;color: rgb(13, 31, 53);font-weight: 600;">info@asiacerainternational.com</a>
+					or
+					click below to start a WhatsApp Conversation.
+				</p>
+				<div class="representative">
+					<img src="assets/images/fav-icon/favicon.png" alt="Representative">
+					<div>
+						<strong>Asiacera international</strong>
+						<p class="m-0"><a href="https://wa.me/+918780073457" target="_blank"
+								style="text-decoration: none;color: rgb(13, 31, 53);font-weight: 600;">+91 87800 73457</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- WhatsApp Icon -->
+		<img src="assets/images/whatsapp.png" alt="WhatsApp Icon" class="whatsapp-icon" width="50" onclick="togglePopup()" />
+		
+		<!-- Bootstrap JS -->
+		
+		<script>
+			function togglePopup() {
+				const popup = document.getElementById("whatsapp-popup");
+				popup.classList.toggle("d-none");
+			}
+		</script>
+			
+			<script src="../../../cdn.jsdelivr.net/gh/studio-freight/lenis%401.0.29/bundled/lenis.min.js"></script> 
+			<script src="assets/js/jquery-3.7.0.min.js"></script>	
+			<script src="assets/js/bootstrap.bundle.min.js"></script>
+			<script src="assets/js/swiper-bundle.min.js"></script>	
+			<script src="assets/js/jquery.magnific-popup.min.js"></script>	
+			<script src="assets/js/anime.min.js"></script>	
+			<script src="assets/js/animate.js"></script>
+			<script src="assets/js/wow.min.js"></script>		
+			<script src="assets/js/odometer.js"></script>	
+			<script src="../../../unpkg.com/typed.js%402.1.0/dist/typed.umd.js"></script>	
+			<script src="assets/js/jquery.progressScroll.min.js"></script>			
+			<script src="assets/js/script.js"></script>	
+
+			<script src="customize/presets.js"></script>
+		
+	</body>
+
+
+<!-- Mirrored from themeperch.net/html/Asiacera-International/export.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Aug 2024 05:24:59 GMT -->
+</html>
