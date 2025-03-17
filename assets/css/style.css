@@ -8654,12 +8654,12 @@ font-size: 59px;  }
   object-fit: cover !important;
 }
 
-.carousel-captions .Asiacera-International-button {
+.carousel-captions .AsiaceraInternational-button {
   margin-top: 35px;
 }
 
 @media (max-width: 1620px) {
-  .carousel-captions .Asiacera-International-button {
+  .carousel-captions .AsiaceraInternational-button {
     margin-top: 16px;
   }
 }
@@ -9192,11 +9192,11 @@ font-size: 59px;  }
   }
 }
 
-.Asiacera-International-nav .nav {
+.AsiaceraInternational-nav .nav {
   --bs-nav-link-padding-x: 1.75rem;
 }
 
-.Asiacera-International-nav .navbar {
+.AsiaceraInternational-nav .navbar {
   --bs-navbar-nav-link-padding-x: 1.75rem;
   --bs-navbar-padding-y: 0;
   --bs-navbar-active-color:  var(--bs-secondary);
@@ -9205,33 +9205,33 @@ font-size: 59px;  }
 }
 
 @media (max-width: 1199.98px) {
-  .Asiacera-International-nav .navbar {
+  .AsiaceraInternational-nav .navbar {
     --bs-navbar-padding-y: 12px;
   }
 }
 
-.Asiacera-International-nav .navbar-nav {
+.AsiaceraInternational-nav .navbar-nav {
   --bs-nav-link-font-weight: 500;
 }
 
-.Asiacera-International-nav .nav-link {
+.AsiaceraInternational-nav .nav-link {
   --bs-navbar-nav-link-padding-x: 28px;
   --bs-nav-link-padding-x: 28px;
   --bs-nav-link-padding-y: 34px;
   --bs-navbar-active-color: var(--bs-secondary);
 }
 
-.Asiacera-International-nav .nav-link.active, .Asiacera-International-nav .nav-link.show, .Asiacera-International-nav .nav-link:hover {
+.AsiaceraInternational-nav .nav-link.active, .AsiaceraInternational-nav .nav-link.show, .AsiaceraInternational-nav .nav-link:hover {
   background: var(--bs-primary);
   color: var(--bs-navbar-active-color);
 }
 
-.Asiacera-International-nav .nav-link:focus-visible {
+.AsiaceraInternational-nav .nav-link:focus-visible {
   box-shadow: none;
 }
 
 @media (max-width: 1400px) {
-  .Asiacera-International-nav .nav-link {
+  .AsiaceraInternational-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 24px;
     --bs-nav-link-padding-x: 24px;
     --bs-nav-link-padding-y: 30px;
@@ -9239,7 +9239,7 @@ font-size: 59px;  }
 }
 
 @media (max-width: 1200px) {
-  .Asiacera-International-nav .nav-link {
+  .AsiaceraInternational-nav .nav-link {
     --bs-navbar-nav-link-padding-x: 22px;
     --bs-nav-link-padding-x: 22px;
     --bs-nav-link-padding-y: 22px;
@@ -10457,7 +10457,7 @@ font-size: 59px;  }
   z-index: 1;
 }
 
-.project-contents .project-info p, .project-contents .project-info .Asiacera-International-button {
+.project-contents .project-info p, .project-contents .project-info .AsiaceraInternational-button {
   animation: fadeInUpBig 3s;
 }
 
@@ -11541,7 +11541,7 @@ font-size: 59px;  }
   margin: 0 auto;
 }
 
-.hero-landing-contents .Asiacera-International-button {
+.hero-landing-contents .AsiaceraInternational-button {
   margin-top: var(--bs-hero-btns-margin-top);
 }
 
@@ -11649,19 +11649,19 @@ svg {
   font-weight: 800 !important;
 }
 
-.Asiacera-International-button {
+.AsiaceraInternational-button {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
 
 @media (max-width: 1520px) {
-  .Asiacera-International-button .btn {
+  .AsiaceraInternational-button .btn {
     --bs-btn-padding-x: 1.37rem;
     --bs-btn-padding-y: 0.568rem;
     --bs-btn-font-size: 18px;
   }
-  .Asiacera-International-button svg {
+  .AsiaceraInternational-button svg {
     width: 28px;
     height: 20px;
   }
@@ -12472,12 +12472,12 @@ textarea {
   left: 0;
 }
 
-.menu-image-contents .Asiacera-International-button {
+.menu-image-contents .AsiaceraInternational-button {
   width: 100%;
 }
 
 @media (max-width: 1199.98px) {
-  .menu-image-contents .Asiacera-International-button {
+  .menu-image-contents .AsiaceraInternational-button {
     width: auto;
   }
 }
