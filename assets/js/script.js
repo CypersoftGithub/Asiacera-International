@@ -30,34 +30,55 @@ document.addEventListener("DOMContentLoaded", () => {
 // loader button end 
 
   // header start 
-		document.addEventListener("DOMContentLoaded", function () {
-			// Handle main dropdown
-			document.querySelector(".main-dropdown").addEventListener("click", function (e) {
-				e.preventDefault();
-				let parent = this.parentElement;
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const dropdowns = document.querySelectorAll('.dropdown');
+    const nestedDropdowns = document.querySelectorAll('.nested-dropdown');
 
-				// Toggle dropdown visibility
-				parent.classList.toggle("active");
-			});
+    // Mobile menu toggle
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        navLinks.classList.toggle('active');
+    });
 
-			// Handle submenu
-			document.querySelector(".submenu-toggle").addEventListener("click", function (e) {
-				e.preventDefault();
-				let submenuParent = this.parentElement;
+    // Handle main dropdowns on mobile
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('a');
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
 
-				// Toggle submenu visibility
-				submenuParent.classList.toggle("active");
-			});
+    // Handle nested dropdowns on mobile
+    nestedDropdowns.forEach(nested => {
+        const link = nested.querySelector('a');
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                nested.classList.toggle('active');
+            }
+        });
+    });
 
-			// Close dropdown when clicking outside
-			document.addEventListener("click", function (event) {
-				if (!event.target.closest(".dropdown")) {
-					document.querySelectorAll(".dropdown").forEach(function (dropdown) {
-						dropdown.classList.remove("active");
-					});
-				}
-			});
-		});
+    // Close menus when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!navLinks.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+            navLinks.classList.remove('active');
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+            nestedDropdowns.forEach(nested => {
+                nested.classList.remove('active');
+            });
+        }
+    });
+}); 
   // header end 
 
 

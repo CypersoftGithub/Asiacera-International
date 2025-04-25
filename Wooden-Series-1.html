@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Customise-Theme -->
     <!-- <link rel="stylesheet" href="assets/css/theme.css"> -->
@@ -54,118 +55,51 @@
         </div>
 
         <!--Header Section ======================-->
-        <header class="section-header header-1 AsiaceraInternational-nav sticky-navbar header-bg-1">
-            <div class="d-none d-xl-block">
-                <div class="container-fluid max-width">
-                    <!-- top-bar -->
-                </div>
-                <!-- container-fluid -->
-            </div>
-        
-            <nav class="navbar navbar-expand-xl navbar-light nav-border hover-menu" aria-label="Offcanvas navbar large">
-                <div class="container-fluid max-width">
-        
-                    <div class="d-flex align-items-end">
-                        <a class="navbar-brand py-0" href="https://asiacerainternational.com/">
-                            <span class="logo">
-                                <img src="assets/images/fav-icon/AS2.png" alt="logo" width="auto" height="50">
-                            </span>
-                        </a>
-                    </div>
-                    <a href="javascript:void(0)" class="toggler-icon text-decoration-none d-block d-xl-none"
-                        data-bs-toggle="offcanvas" data-bs-target="#AsiaceraInternationalNavbar"
-                        aria-controls="AsiaceraInternationalNavbar" aria-label="Toggle navigation">
-                        <svg width="40" height="23" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="1.5" y1="1.5" x2="38.5" y2="1.5" stroke="#253B2F" stroke-width="3"
-                                stroke-linecap="round" />
-                            <line x1="1.5" y1="11.5" x2="38.5" y2="11.5" stroke="#253B2F" stroke-width="3"
-                                stroke-linecap="round" />
-                            <line x1="21.5" y1="21.5" x2="38.5" y2="21.5" stroke="#253B2F" stroke-width="3"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-        
-                    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
-                        id="AsiaceraInternationalNavbar" aria-labelledby="AsiaceraInternationalNavbarLabel">
-                        <div class="offcanvas-header">
-                            <span class="offcanvas-title" id="AsiaceraInternationalNavbarLabel">
-                                <span class="logo">
-                                    <img src="assets/images/fav-icon/AS2.png" alt="logo" width="auto" height="50">
-                                </span>
-                            </span>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 align-items-xl-center">
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://asiacerainternational.com/">
-                                        Home
-                                    </a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about-us">
-                                        About Us
-                                    </a>
-                                </li>
-        
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="productDetailsDropdown" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Our Products
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="productDetailsDropdown">
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Porcelain Tiles</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="600x600">600x600</a></li>
-                                                <li><a class="dropdown-item" href="800x800">800x800</a></li>
-                                                <li><a class="dropdown-item" href="600x1200">600x1200</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href="slab-tiles">Slab Tiles</a></li>
-                                        <li><a class="dropdown-item" href="ceramic-raw-material">Ceramic Raw Material</a></li>
-                                    </ul>
-                                </li>
-        
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="productDetailsDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Product Details
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="productDetailsDropdown">
-                                        <li><a class="dropdown-item" href="PackingDetails">Packing Details</a></li>
-                                        <li><a class="dropdown-item" href="technical-specification">Technical
-                                                Specification</a></li>
-                                    </ul>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="export">
-                                        Export
-                                    </a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="catalogue">
-                                        Catalogue
-                                    </a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- container-fluid -->
-            </nav>
-        
-        </header>
+        <nav class="navbar">
+			<div class="logo">
+				<img src="assets/images/fav-icon/AS2.png" alt="Asiacera Logo">
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="https://asiacerainternational.com/">Home</a></li>
+					<li><a href="about-us">About Us</a></li>
+					<li class="dropdown">
+						<a href="#">Our Products <i class="fas fa-chevron-down"></i></a>
+						<div class="dropdown-content">
+							<div class="dropdown-column">
+								<div class="nested-dropdown">
+									<a href="#">Porcelain Tiles <i class="fas fa-chevron-right"></i></a>
+									<div class="nested-dropdown-content">
+										<div class="nested-column">
+											<a href="600x600">600x600</a>
+											<a href="800x800">800x800</a>
+											<a href="600x1200">600x1200</a>
+										</div>
+									</div>
+								</div>
+								<a href="slab-tiles">Slab Tiles</a>
+								<a href="ceramic-raw-material">Ceramic Raw Material</a>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#">Product Details <i class="fas fa-chevron-down"></i></a>
+						<div class="dropdown-content">
+							<div class="dropdown-column">
+								<a href="PackingDetails">Packing Details</a>
+								<a href="technical-specification">Technical Specification</a>
+							</div>
+						</div>
+					</li>
+					<li><a href="export">Export</a></li>
+					<li><a href="catalogue">Catalogue</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="mobile-menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
         <!--Header Section ======================-->
 
         <!--Banner Section ======================-->
@@ -445,7 +379,7 @@
 
     </div>
     <!-- pages -->
-     !-- WhatsApp Popup -->
+     <!-- WhatsApp Popup -->
     <div id="whatsapp-popup" class="whatsapp-popup d-none">
         <div class="header">
             <strong>WhatsApp Chat</strong>
