@@ -26789,7 +26789,7 @@ position: absolute;
 
 /* Ensure the nested dropdown stays visible when hovering */
 .dropdown-column .nested-dropdown:hover {
-  background-color: #d2e0d9;
+  /* background-color: #d2e0d9; */
 }
 
 .dropdown-column .nested-dropdown:hover .nested-dropdown-content {
