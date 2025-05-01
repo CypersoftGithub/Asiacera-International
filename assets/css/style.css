@@ -26736,7 +26736,7 @@ position: absolute;
 
 .dropdown-column:first-child a:hover {
   border-left: 3px solid darkgreen;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 /* Nested dropdown styles */
