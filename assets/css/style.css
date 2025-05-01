@@ -26726,7 +26726,7 @@ position: absolute;
 .dropdown-column a:hover {
   color: darkgreen;
   background-color: white;
-  transform: translateX(5px);
+  transform: translateX(2px);
 }
 
 /* Specific hover effects for Porcelain Tiles items */
